@@ -1,0 +1,4 @@
+# Ignore Terraform binaries and state
+.terraform/
+*.tfstate
+*.tfstate.*
