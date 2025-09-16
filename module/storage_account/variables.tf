@@ -1,4 +1,4 @@
-variable "name" {
+variable "storage_account_name" {
   type = string
 }
 
@@ -16,11 +16,6 @@ variable "account_tier" {
 
 variable "replication_type" {
   type = string
-}
-
-variable "kind" {
-  type    = string
-  default = "StorageV2"
 }
 
 variable "tags" {
