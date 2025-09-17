@@ -19,6 +19,10 @@ jobs:
               with:
                 creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+            - name: Export subscription ID
+              run: |
+               echo "ARM_SUBSCRIPTION_ID=${{ secrets.SUBSCRIPTION_DETAILS }}" >> $GITHUB_ENV
+
             - name: Check Azure environment
               run: |
                 echo "Subscription: $ARM_SUBSCRIPTION_ID"
